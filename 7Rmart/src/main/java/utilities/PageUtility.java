@@ -37,23 +37,11 @@ public class PageUtility
 		Select select = new Select(element);
 		select.selectByValue(value);
 	}
-	public void dragAndDrop(WebElement element1,WebElement element2)
-	{
-		Actions actions=new Actions(driver);
-		actions.dragAndDrop(element1, element2);
-	}
 	
-	public void contextClick(WebElement element)
-	{
-		Actions actions=new Actions(driver);
-		actions.contextClick(element);
-	}
 	
-	public void moveToElement(WebElement element)
-	{
-		Actions actions=new Actions(driver);
-		actions.contextClick(element);
-	}
+	
+	
+	
 	public void scrollBy(WebDriver driver) 
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;

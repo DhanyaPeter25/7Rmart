@@ -5,7 +5,8 @@
     <classes>
       <class name="testscript.AdminUsersTest">
         <methods>
-          <include name="browserInitialize"/>
+          <include name="browserInitialisation"/>
+          <include name="driverQuit"/>
           <include name="whetherTheUserIsableToCreateaNewUser"/>
         </methods>
       </class> <!-- testscript.AdminUsersTest -->
