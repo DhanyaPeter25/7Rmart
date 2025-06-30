@@ -11,6 +11,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import constants.Constants;
 import utilities.ScreenshotUtility;
@@ -25,7 +26,7 @@ public class Base
 		
 	    @Parameters("browser")                                                   //parameters declared  at XML configuration
 		@BeforeMethod(alwaysRun=true)                                             //Runs before every @Test method
-	     public void browserInitialisation(String browser) throws Exception
+	     public void browserInitialisation(@Optional("chrome") String browser) throws Exception
 	    {
 	      try 
 	      {
