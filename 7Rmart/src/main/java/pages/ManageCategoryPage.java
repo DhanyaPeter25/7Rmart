@@ -22,7 +22,8 @@ public class ManageCategoryPage
 	@FindBy(xpath = "//a[@onclick=\"click_button(1)\"]") WebElement addnewbtn;
 	@FindBy(xpath = "//input[@id='main_img']") WebElement uploadbtn;
 	@FindBy(xpath = "//input[@placeholder=\"Enter the Category\"]") WebElement catname;
-	@FindBy(xpath = "//button[@name='create']") WebElement save;
+	@FindBy(xpath="//button[text()='Save']")WebElement save;
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alertmsg;
 	
 	public void clickMoreInfo()
 	{
@@ -46,6 +47,10 @@ public class ManageCategoryPage
 		PageUtility page=new PageUtility();
 		page.javaSriptClick(driver, save);
 		//save.click();
+	}
+	public boolean isAlertMessageIsDisplayed()
+	{
+		return alertmsg.isDisplayed();
 	}
 	
 	

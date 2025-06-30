@@ -1,103 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-27T18:36:21 IST" name="Suite" finished-at="2025-06-27T18:37:36 IST" duration-ms="75080">
+  <suite started-at="2025-06-30T11:32:48 IST" name="MultiBrowserTesting" finished-at="2025-06-30T11:32:58 IST" duration-ms="10569">
     <groups>
     </groups>
-    <test started-at="2025-06-27T18:36:21 IST" name="Test" finished-at="2025-06-27T18:37:36 IST" duration-ms="75080">
-      <class name="testscript.ManageNewsTest">
-        <test-method is-config="true" signature="browserInitialize()[pri:0, instance:testscript.ManageNewsTest@397fbdb]" started-at="2025-06-27T18:36:48 IST" name="browserInitialize" finished-at="2025-06-27T18:36:51 IST" duration-ms="3173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialize -->
-        <test-method signature="addNews()[pri:0, instance:testscript.ManageNewsTest@397fbdb]" started-at="2025-06-27T18:36:51 IST" name="addNews" finished-at="2025-06-27T18:36:54 IST" duration-ms="2955" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNews -->
-      </class> <!-- testscript.ManageNewsTest -->
+    <test started-at="2025-06-30T11:32:48 IST" name="ChromeTest" finished-at="2025-06-30T11:32:58 IST" duration-ms="10435">
       <class name="testscript.LogOutTest">
-        <test-method is-config="true" signature="browserInitialize()[pri:0, instance:testscript.LogOutTest@33d512c1]" started-at="2025-06-27T18:36:54 IST" name="browserInitialize" finished-at="2025-06-27T18:37:00 IST" duration-ms="5973" status="PASS">
+        <test-method is-config="true" signature="browserInitialisation(java.lang.String)[pri:0, instance:testscript.LogOutTest@6aeb35e6]" started-at="2025-06-30T11:32:48 IST" name="browserInitialisation" finished-at="2025-06-30T11:32:53 IST" duration-ms="5149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserInitialize -->
-        <test-method signature="isTheUserAbleToLogOut()[pri:0, instance:testscript.LogOutTest@33d512c1]" started-at="2025-06-27T18:37:00 IST" name="isTheUserAbleToLogOut" finished-at="2025-06-27T18:37:04 IST" duration-ms="3676" status="PASS">
+        </test-method> <!-- browserInitialisation -->
+        <test-method signature="isTheUserAbleToLogOut()[pri:0, instance:testscript.LogOutTest@6aeb35e6]" started-at="2025-06-30T11:32:53 IST" name="isTheUserAbleToLogOut" finished-at="2025-06-30T11:32:58 IST" duration-ms="4773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isTheUserAbleToLogOut -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LogOutTest@6aeb35e6]" started-at="2025-06-30T11:32:58 IST" name="driverQuit" finished-at="2025-06-30T11:32:58 IST" duration-ms="421" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=isTheUserAbleToLogOut status=SUCCESS method=LogOutTest.isTheUserAbleToLogOut()[pri:0, instance:testscript.LogOutTest@6aeb35e6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
       </class> <!-- testscript.LogOutTest -->
-      <class name="testscript.ManageFooterTest">
-        <test-method is-config="true" signature="browserInitialize()[pri:0, instance:testscript.ManageFooterTest@515c6049]" started-at="2025-06-27T18:37:04 IST" name="browserInitialize" finished-at="2025-06-27T18:37:08 IST" duration-ms="4064" status="PASS">
+    </test> <!-- ChromeTest -->
+    <test started-at="2025-06-30T11:32:48 IST" name="EdgeTest" finished-at="2025-06-30T11:32:58 IST" duration-ms="10569">
+      <class name="testscript.LogOutTest">
+        <test-method is-config="true" signature="browserInitialisation(java.lang.String)[pri:0, instance:testscript.LogOutTest@3fc2959f]" started-at="2025-06-30T11:32:48 IST" name="browserInitialisation" finished-at="2025-06-30T11:32:54 IST" duration-ms="6242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserInitialize -->
-        <test-method signature="addNewCategory()[pri:0, instance:testscript.ManageFooterTest@515c6049]" started-at="2025-06-27T18:37:08 IST" name="addNewCategory" finished-at="2025-06-27T18:37:12 IST" duration-ms="3684" status="PASS">
+        </test-method> <!-- browserInitialisation -->
+        <test-method signature="isTheUserAbleToLogOut()[pri:0, instance:testscript.LogOutTest@3fc2959f]" started-at="2025-06-30T11:32:54 IST" name="isTheUserAbleToLogOut" finished-at="2025-06-30T11:32:58 IST" duration-ms="3867" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewCategory -->
-      </class> <!-- testscript.ManageFooterTest -->
-      <class name="testscript.ManageContactTest">
-        <test-method is-config="true" signature="browserInitialize()[pri:0, instance:testscript.ManageContactTest@3590fc5b]" started-at="2025-06-27T18:36:33 IST" name="browserInitialize" finished-at="2025-06-27T18:36:37 IST" duration-ms="4165" status="PASS">
+        </test-method> <!-- isTheUserAbleToLogOut -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LogOutTest@3fc2959f]" started-at="2025-06-30T11:32:58 IST" name="driverQuit" finished-at="2025-06-30T11:32:58 IST" duration-ms="384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=isTheUserAbleToLogOut status=SUCCESS method=LogOutTest.isTheUserAbleToLogOut()[pri:0, instance:testscript.LogOutTest@3fc2959f] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserInitialize -->
-        <test-method signature="isTheUserAbleToClickManageContact()[pri:0, instance:testscript.ManageContactTest@3590fc5b]" started-at="2025-06-27T18:36:37 IST" name="isTheUserAbleToClickManageContact" finished-at="2025-06-27T18:36:42 IST" duration-ms="4550" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isTheUserAbleToClickManageContact -->
-        <test-method is-config="true" signature="browserInitialize()[pri:0, instance:testscript.ManageContactTest@3590fc5b]" started-at="2025-06-27T18:36:42 IST" name="browserInitialize" finished-at="2025-06-27T18:36:45 IST" duration-ms="3318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialize -->
-        <test-method signature="whetherTheUpdateButtonIsVisible()[pri:0, instance:testscript.ManageContactTest@3590fc5b]" started-at="2025-06-27T18:36:45 IST" name="whetherTheUpdateButtonIsVisible" finished-at="2025-06-27T18:36:48 IST" duration-ms="2833" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- whetherTheUpdateButtonIsVisible -->
-      </class> <!-- testscript.ManageContactTest -->
-      <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="browserInitialize()[pri:0, instance:testscript.LoginTest@639c2c1d]" started-at="2025-06-27T18:37:12 IST" name="browserInitialize" finished-at="2025-06-27T18:37:16 IST" duration-ms="4397" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialize -->
-        <test-method signature="verifyTheUserIsAbleToLoginWithInvalidCredentials()[pri:0, instance:testscript.LoginTest@639c2c1d]" started-at="2025-06-27T18:37:16 IST" name="verifyTheUserIsAbleToLoginWithInvalidCredentials" finished-at="2025-06-27T18:37:17 IST" duration-ms="1172" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="browserInitialize()[pri:0, instance:testscript.LoginTest@639c2c1d]" started-at="2025-06-27T18:37:17 IST" name="browserInitialize" finished-at="2025-06-27T18:37:21 IST" duration-ms="4221" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialize -->
-        <test-method signature="verifyTheUserIsAbleToLoginWithInvalidPassword()[pri:0, instance:testscript.LoginTest@639c2c1d]" started-at="2025-06-27T18:37:21 IST" name="verifyTheUserIsAbleToLoginWithInvalidPassword" finished-at="2025-06-27T18:37:23 IST" duration-ms="1235" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToLoginWithInvalidPassword -->
-        <test-method is-config="true" signature="browserInitialize()[pri:0, instance:testscript.LoginTest@639c2c1d]" started-at="2025-06-27T18:37:23 IST" name="browserInitialize" finished-at="2025-06-27T18:37:29 IST" duration-ms="6114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialize -->
-        <test-method signature="verifyTheUserIsAbleToLoginWithInvalidUsername()[pri:0, instance:testscript.LoginTest@639c2c1d]" started-at="2025-06-27T18:37:29 IST" name="verifyTheUserIsAbleToLoginWithInvalidUsername" finished-at="2025-06-27T18:37:30 IST" duration-ms="1326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToLoginWithInvalidUsername -->
-        <test-method is-config="true" signature="browserInitialize()[pri:0, instance:testscript.LoginTest@639c2c1d]" started-at="2025-06-27T18:37:30 IST" name="browserInitialize" finished-at="2025-06-27T18:37:35 IST" duration-ms="4650" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialize -->
-        <test-method signature="verifyTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@639c2c1d]" started-at="2025-06-27T18:37:35 IST" name="verifyTheUserIsAbleToLoginWithValidCredentials" finished-at="2025-06-27T18:37:36 IST" duration-ms="1566" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToLoginWithValidCredentials -->
-      </class> <!-- testscript.LoginTest -->
-      <class name="testscript.ManageCategoryTest">
-        <test-method is-config="true" signature="browserInitialize()[pri:0, instance:testscript.ManageCategoryTest@1bd4fdd]" started-at="2025-06-27T18:36:21 IST" name="browserInitialize" finished-at="2025-06-27T18:36:26 IST" duration-ms="4428" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialize -->
-        <test-method signature="fileUpload()[pri:0, instance:testscript.ManageCategoryTest@1bd4fdd]" started-at="2025-06-27T18:36:26 IST" name="fileUpload" finished-at="2025-06-27T18:36:33 IST" duration-ms="7385" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fileUpload -->
-      </class> <!-- testscript.ManageCategoryTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testscript.LogOutTest -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- MultiBrowserTesting -->
 </testng-results>

@@ -32,6 +32,7 @@ public class ManageContactTest extends Base
 	managecontactpage.enterPhone(managepnum);
 	managecontactpage.enterEmail(manageemail);
 	managecontactpage.enterAddress(manageaddress);
+	
 	}
 	
 	@Test
